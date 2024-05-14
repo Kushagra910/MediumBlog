@@ -3,6 +3,7 @@ import axios from "axios";
 import { BACKEND_URL } from "../config";
 import { ChangeEvent, useState } from "react";
 import {  useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 export const Publish = () => {
   const [title,setTitle] = useState("");
@@ -10,15 +11,21 @@ export const Publish = () => {
   const navigate = useNavigate();
 
   const publishHandler = async () => {
-    const response = await axios.post(`${BACKEND_URL}/api/v1 /blog`, {
-      title,
-      content:description,
-    },{
-      headers:{
-        Authorization : localStorage.getItem('token')
-      }
-    });
-    navigate(`/blog/${response.data.id}`)
+     try{
+      const response = await axios.post(`${BACKEND_URL}/api/v1/blog`, {
+        title,
+        content:description,
+      },{
+        headers:{
+          Authorization : localStorage.getItem('token')
+        }
+      });
+      toast.success("blog posted");
+      navigate(`/blog/${response.data.id}`)
+     } catch(err){
+       console.log("PUBLISH_BLOG_API_ERROR",err);
+       toast.error('something went wrong');
+     }
   };
   return (
     <div className="w-full bg-slate-500 h-screen">
