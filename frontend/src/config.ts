@@ -1,0 +1,1 @@
+export const BACKEND_URL = "https://medium.zoro-sudden07.workers.dev";
