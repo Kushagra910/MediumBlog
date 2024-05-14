@@ -1,4 +1,4 @@
-import { Avatar } from "./BlogCard";
+
 import { Link } from "react-router-dom";
 import { IoIosSettings } from "react-icons/io";
 import { IoIosNotifications } from "react-icons/io";
