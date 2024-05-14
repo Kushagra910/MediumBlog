@@ -9,8 +9,8 @@ export const BlogDetails = ({ blog }: { blog: Blog | any  }) => {
       <div className="w-full border-b pb-3 bg-slate-400">
         <Navbar name={authorName} />
       </div>
-      <div className="flex justify-center">
-        <div className="grid grid-cols-12 px-10 w-full pt-200 max-w-5xl mt-12 gap-3">
+      <div className="flex  justify-center">
+        <div className="grid  md:grid-cols-12  px-10 w-full pt-200 max-w-5xl mt-12 gap-3">
           <div className=" col-span-8">
             <div className="text-3xl font-extrabold leading-9">
               {blog.title}

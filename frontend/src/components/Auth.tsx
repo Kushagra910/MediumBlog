@@ -35,9 +35,9 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
     <div className="h-screen flex flex-col  justify-center leading-4">
       <div className="flex justify-center  ">
         <div className="flex flex-col gap-2">
-          <div className="mb-4 flex flex-col gap-2 px-12">
-            <div className="font-extrabold text-4xl">Create an account</div>
-            <div className="text-lg text-center font-semibold text-slate-500">
+          <div className="mb-4 flex flex-col gap-2 px-8 md:px-12">
+            <div className="font-extrabold text-2xl md:text-4xl">Create an account</div>
+            <div className="text-md md:text-lg text-center font-semibold text-slate-500">
               {type === "signin" ? "Don't have an account ?" : "Already have an account ?"} {" "}
               <Link to={type === "signin" ? "/signup" : '/signin'} className="underline">
                 {type === "signin" ? "SignUp" : "Login"}
