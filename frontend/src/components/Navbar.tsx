@@ -13,7 +13,7 @@ export const Navbar = ({ name }: { name: string }) => {
       <Link to="/">
         <div className="flex  gap-2 items-center cursor-pointer">
           <img
-            src="../src/assets/7127198_medium_medium logo_logo_icon.png"
+            src="public/7127198_medium_medium logo_logo_icon.png"
             className="h-14 w-16"
           />
           <p className="cusrsor-pointer font-extrabold text-3xl ">Medium</p>
