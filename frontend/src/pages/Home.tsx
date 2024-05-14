@@ -34,7 +34,7 @@ export default function Home() {
                 alt="Article Image"
                 className="h-48 w-full rounded-t-lg object-cover"
                 height="200"
-                src="../../public/diego-ph-fIq0tET6llw-unsplash.jpg"
+                src="diego-ph-fIq0tET6llw-unsplash.jpg"
                 style={{
                   aspectRatio: "300/200",
                   objectFit: "cover",
@@ -55,7 +55,7 @@ export default function Home() {
                 alt="Article Image"
                 className="h-48 w-full rounded-t-lg object-cover"
                 height="200"
-                src="../../public/diego-ph-fIq0tET6llw-unsplash.jpg"
+                src="diego-ph-fIq0tET6llw-unsplash.jpg"
                 style={{
                   aspectRatio: "300/200",
                   objectFit: "cover",
@@ -76,7 +76,7 @@ export default function Home() {
                 alt="Article Image"
                 className="h-48 w-full rounded-t-lg object-cover"
                 height="200"
-                src="../../public/diego-ph-fIq0tET6llw-unsplash.jpg"
+                src="diego-ph-fIq0tET6llw-unsplash.jpg"
                 style={{
                   aspectRatio: "300/200",
                   objectFit: "cover",
